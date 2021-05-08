@@ -26,8 +26,12 @@ class CartItem extends React.Component {
         });
     }
     decreaseQuality = () => {
+        const {qty} = this.state;
+        
+        if(qty===0){
+            return;
+        }
     //  setState form 2 - if previous state required use this
-
         this.setState((prevState)=>{
             return{
                 qty: prevState.qty - 1
