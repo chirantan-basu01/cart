@@ -39,6 +39,7 @@ class CartItem extends React.Component {
         });
     }
     render() {
+        console.log('render');
         const { price,title,qty } = this.state;
         return (
             <div className="cart-item">
@@ -54,19 +55,19 @@ class CartItem extends React.Component {
                         <img 
                         alt="increase" 
                         className="action-icons" 
-                        src="https://www.flaticon.com/svg/vstatic/svg/992/992651.svg?token=exp=1620383404~hmac=394245a6cc47002e99c07e517709fd13"
+                        src="https://www.flaticon.com/premium-icon/icons/svg/3303/3303893.svg"
                         onClick={this.increaseQuantity}
                         />
                         <img 
                         alt="decrease" 
                         className="action-icons" 
-                        src="https://www.flaticon.com/svg/vstatic/svg/992/992683.svg?token=exp=1620383223~hmac=a2883352753e0a3c6f5c42b5ceb7f697"
+                        src="https://www.flaticon.com/premium-icon/icons/svg/2740/2740679.svg"
                         onClick={this.decreaseQuality}
                         />
                         <img 
                         alt="delete" 
                         className="action-icons" 
-                        src="https://www.flaticon.com/svg/vstatic/svg/1214/1214428.svg?token=exp=1620383438~hmac=6911992d1931acc1853a7ea4153384ce"
+                        src="https://www.flaticon.com/premium-icon/icons/svg/484/484662.svg"
                         />
                     </div> 
                 </div>
