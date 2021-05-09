@@ -2,34 +2,6 @@ import React from 'react';
 
 class CartItem extends React.Component {
     
-    increaseQuantity = () => {
-    //  console.log('this',this.state);
-    //  setState form 1 for normal change like title 
-        // this.setState({
-        //     qty: this.state.qty +1
-        // });
-
-    //  setState form 2 - if previous state required use this
-
-        this.setState((prevState)=>{
-            return{
-                qty: prevState.qty + 1
-            }
-        });
-    }
-    decreaseQuality = () => {
-        const {qty} = this.state;
-        
-        if(qty===0){
-            return;
-        }
-    //  setState form 2 - if previous state required use this
-        this.setState((prevState)=>{
-            return{
-                qty: prevState.qty - 1
-            }
-        });
-    }
     render() {
         console.log('this.props',this.props);
         const { price,title,qty } = this.props.product;
@@ -48,13 +20,13 @@ class CartItem extends React.Component {
                         alt="increase" 
                         className="action-icons" 
                         src="https://www.flaticon.com/premium-icon/icons/svg/3303/3303893.svg"
-                        onClick={this.increaseQuantity}
+                        onClick={() => this.props.onIncreaseQuantity(this.props.product)}
                         />
                         <img 
                         alt="decrease" 
                         className="action-icons" 
                         src="https://www.flaticon.com/premium-icon/icons/svg/2740/2740679.svg"
-                        onClick={this.decreaseQuality}
+                        onClick={() => this.props.onDecreaseQuantity(this.props.product)}
                         />
                         <img 
                         alt="delete" 
