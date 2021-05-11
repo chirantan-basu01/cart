@@ -12,7 +12,7 @@ class App extends React.Component {
                 price: 99,
                 title: 'Watch',
                 qty: 1,
-                img: 'https://images.unsplash.com/photo-1564594985645-4427056e22e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
+                img: 'https://images.unsplash.com/photo-1560863185-a4f6199b5768?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
                 id: 1
             },
             {
@@ -26,7 +26,7 @@ class App extends React.Component {
                 price: 9999,
                 title: 'Laptop',
                 qty: 4,
-                img: 'https://images.unsplash.com/photo-1575024357670-2b5164f470c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
+                img: 'https://images.unsplash.com/flagged/photo-1560854350-13c0b47a3180?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=726&q=80',
                 id: 3
             }
         ]
